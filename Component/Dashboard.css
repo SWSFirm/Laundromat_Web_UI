@@ -1,0 +1,155 @@
+
+body{
+  
+  font-family: 'roboto light',sans-serif ;
+  font-weight: 500;
+  margin:0;   
+  overflow: hidden;
+}
+
+.dasboard_section {
+  
+  width: 1499px;
+  height: 1080px;
+  background: #34a8ff;
+}
+
+.light_blue_hub {
+  margin-left: 15px;
+  width: 1433px;
+  height: 381px;
+  border-radius: 15px;
+  background: #c5dff4;
+}
+
+.telemetry_square {
+  margin-top: 0;
+  margin-left: 33px;
+  margin-bottom: 0;
+  width: 379px;
+  height: 280px;
+  border-radius: 15px;
+  background: #ffffff;
+}
+
+
+
+
+.flex{
+    display: flex;
+    margin-bottom: 0;
+}
+
+.dashboard_text {
+  margin-top: 50px;
+  margin-left: 15px;
+  height: 40.5px;  
+  font-style: normal;  
+  font-size: 27px;
+  font-weight: bold; 
+  white-space: nowrap;
+  text-align: center;
+  color: #ffffff;
+}
+
+.revenue-services_text {
+  padding-top: 10px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  margin-left: 576px;
+  width: 232px;
+  height: 40.5px;  
+  font-style: normal;  
+  font-size: 27px;  
+  white-space: nowrap;
+  text-align: center;
+  color: #ffffff;
+}
+
+.spacing{
+    height: 26px;
+
+}
+
+.quash_controls{
+    padding:  5px;
+}
+.images{
+    width: 159px;
+    height: 159px;
+    margin-bottom: 0;
+}
+
+.image_Dashboard{
+    margin-right: 5;
+    height: 96px;
+    width:  96px;
+
+}
+
+.telemetry-text_k {
+  padding: 0;
+  margin-top: 55px;
+  margin-bottom: 10px; 
+  width: 171px;
+  height: 136px;  
+  font-weight: bold;
+  font-style: normal;  
+  font-size: 72px;
+  line-height: 108px;
+  white-space: nowrap;
+  text-align: center;
+  align-items: center;
+  color: #010101;
+}
+
+.telemetry-text_k2 {
+  padding: 0;
+  margin-top: 25px;
+  margin-left: 95px;
+  margin-right: 95px;
+  margin-bottom: 10px; 
+  width: 171px;
+  height: 136px;  
+  font-weight: bold;
+  font-style: normal;  
+  font-size: 72px;
+  line-height: 108px;
+  white-space: nowrap;
+  text-align: center;
+  align-items: center;
+  color: #010101;
+}
+
+.washiron_text {  
+  margin-top: 5px;
+  width: 232px;
+  height: 40.5px;  
+  font-style: normal;  
+  font-size: 27px;
+  line-height: 40px;
+  white-space: nowrap;
+  text-align: center;
+  color: #010101;
+}
+
+.days-telemet_text {  
+  margin-top: 35px;
+  margin-bottom: 0;
+  width: 232px;
+  height: 40.5px;  
+  font-style: normal;  
+  font-size: 27px;
+  line-height: 40px;
+  white-space: nowrap;
+  text-align: center;
+  color: #010101;
+}
+
+
+.margin-image-text_top{
+   margin-top: 30px;
+
+}
+
+

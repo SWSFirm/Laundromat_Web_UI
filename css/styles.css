@@ -1,0 +1,459 @@
+
+*,
+*::before,*::after{
+    box-sizing: border-box;
+}
+
+main{
+
+    overflow-x: clip;
+}
+
+
+body{
+  
+  font-family: 'roboto light',sans-serif ;
+  font-weight: 500;
+  margin:0;   
+  overflow: hidden;
+}
+
+
+/* positioning */
+
+.horizontalalignment{
+
+ margin: auto; 
+ display:flex;
+ align-items: center;
+
+}
+
+
+.left_image_Section{
+  
+  align-items: center;
+  margin-inline: auto;
+}
+.align_CenterPlease{
+  
+  align-items: center;
+   margin-right: auto;
+  margin-left:250px;
+}
+.version40c {  
+  
+ 
+  margin: auto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;  
+  white-space: nowrap;
+  color: #060606;
+}
+
+.alignstuffcenter{
+    margin-top: 100px;
+    margin-left: 140px;
+    margin-right: 125px; 
+    padding-inline: 50px; 
+    flex: content;    
+}
+
+.horizontalalignment{
+
+   -ms-text-combine-horizontal: all;
+}
+
+.margin{
+
+    margin-top: 50px;
+    margin-left: 15px;
+    
+}
+.margin_button{
+
+    margin-top: 50px;
+    margin-left: 15px;
+    margin-bottom: 185px;
+    
+}
+
+
+/* ----positioning---- */
+
+
+/* ---for login menu image --- */
+
+.loginmenuimage {
+  margin-top: 100px; 
+  margin-right: 48px;
+  margin-left: 186px;
+  
+  
+  
+}
+
+
+/*----------------*/
+
+/*---Login menu Form----*/
+
+
+
+.name {
+    
+  margin-left: 20px;
+  width: 100%;    
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;  
+  white-space: nowrap;
+  text-align: center;
+  color: #030303;
+}
+
+.password {
+  
+  margin-left: 0px;  
+  width: auto;    
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;  
+  white-space: nowrap;
+  text-align: center;
+  color: #060606;
+}
+
+
+
+
+button:hover{
+
+  background-color: #ffffff;
+  color: #030303;
+}
+.forgotpasswordbtntex {
+  
+  margin-left: 0; 
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;  
+  white-space: nowrap;
+  text-align: center;
+  color: #ffffff;
+}
+
+.loginbtntext {
+  
+  
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;  
+  white-space: nowrap;
+  text-align: center;
+  color: #ffffff;
+}
+
+
+.blueiron {
+ 
+  
+  transform: rotate(-22deg);
+}
+
+.brownjacket {
+  
+  
+  transform: rotate(28deg);
+}
+
+/*----------------*/
+
+@media (max-width: 120em) {
+  
+.loginscreenc { 
+  
+    width: 100%;
+    height: 67.5em;
+    background: #c5dff4;
+    
+}
+
+.loginmenuborder {  
+  margin-top: 77px;
+  margin-bottom: 77px;
+  margin-right: 300px;  
+  width: 597px;
+  height: 820px;
+  border-radius: 0.9375em;
+  background: #34a8ff;
+}
+
+.developedbysimulakra {
+  
+  
+     
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;  
+  white-space: nowrap;
+  text-align: center;
+  align-items: center;
+  color: #040404;
+}
+
+.pleaseloginauthorise {
+    
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;  
+  white-space: nowrap;
+  margin-inline: auto;
+  text-align: center;
+  color: #040404;
+}
+
+.loginbutton {  
+  margin-left: 1.3125em;
+  width: 278px;
+  height: 60px;
+  border-radius: 1.875em 0  0 1.875em;  
+  background: #fdae2c;
+  border: 1px  solid #fdae2c;
+}
+
+.forgotpasswordbutton {  
+  margin-right: 1.3125em;
+  width: 278px;
+  height: 60px;
+  border-radius: 0 1.875em  1.875em 0;
+  background: #34a8ff; 
+  border: 1px  solid #ffffff;
+}
+
+.nametextbox {
+  
+ 
+  width: 372px;
+  height: 60px;
+  border-radius: 1.875rem;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 400;  
+  background: #ffffff;
+  border: 1px  solid #fdae2c;
+}
+
+.passwordtextbox {
+  
+  
+  width: 372px;
+  height: 60px;
+  border-radius: 1.875rem;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 400; 
+  background: #ffffff;
+  border: 1px  solid #fdae2c;
+}
+
+
+}
+
+@media (max-width: 80em) {
+ .loginscreenc { 
+  
+    width: 100%;
+    height: 45em;
+    background: #c5dff4;
+    
+  }
+
+.loginmenuborder {  
+   margin-top: 77px;
+  margin-bottom: 77px;
+  margin-right: 300px;    
+  width: 547px;
+  height: 802px;
+  border-radius: 0.9375em;
+  background: #34a8ff;
+}
+
+.developedbysimulakra {
+  
+  
+     
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;  
+  white-space: nowrap;
+  text-align: center;
+  align-items: center;
+  color: #040404;
+}
+
+.pleaseloginauthorise {
+    
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;  
+  white-space: nowrap;
+  margin-inline: auto;
+  text-align: center;
+  color: #040404;
+}
+
+.loginbutton {  
+  margin-left: 1.3125em;
+  width: 250px;
+  height: 60px;
+  border-radius: 1.875em 0  0 1.875em;  
+  background: #fdae2c;
+  border: 1px  solid #fdae2c;
+}
+
+.forgotpasswordbutton {  
+  margin-right: 1.3125em;
+  width: 250px;
+  height: 60px;
+  border-radius: 0 1.875em  1.875em 0;
+  background: #34a8ff; 
+  border: 1px  solid #ffffff;
+}
+
+.nametextbox {
+  
+ 
+  width: 350px;
+  height: 60px;
+  border-radius: 1.875rem;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 400;  
+  background: #ffffff;
+  border: 1px  solid #fdae2c;
+}
+
+.passwordtextbox {
+  
+  
+  width: 350px;
+  height: 60px;
+  border-radius: 1.875rem;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 400; 
+  background: #ffffff;
+  border: 1px  solid #fdae2c;
+}
+
+
+.alignstuffcenter{
+    margin-top: 100px;
+    margin-left: 160px;
+    margin-right: 145px; 
+    padding-inline: 50px; 
+    flex: content;    
+}
+
+}
+
+@media (max-width: 40em) {
+  .loginscreenc { 
+  
+    width: 100%;
+    height: auto;
+    background: #c5dff4;
+    
+  }
+
+  .loginmenuborder {  
+   margin-top: 77px;
+  margin-bottom: 77px;
+  margin-right: 300px;   
+  width: 483px;
+  height: 700px;
+  border-radius: 0.9375em;
+  background: #34a8ff;
+}
+
+.developedbysimulakra {
+  
+  
+     
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;  
+  white-space: nowrap;
+  text-align: center;
+  align-items: center;
+  color: #040404;
+}
+
+.pleaseloginauthorise {
+    
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;  
+  white-space: nowrap;
+  margin-inline: auto;
+  text-align: center;
+  color: #040404;
+}
+
+.loginbutton {  
+  margin-left: 1.3125em;
+  width: 200px;
+  height: 60px;
+  border-radius: 1.875em 0  0 1.875em;  
+  background: #fdae2c;
+  border: 1px  solid #fdae2c;
+}
+
+.forgotpasswordbutton {  
+  margin-right: 1.3125em;
+  width: 200px;
+  height: 60px;
+  border-radius: 0 1.875em  1.875em 0;
+  background: #34a8ff; 
+  border: 1px  solid #ffffff;
+}
+
+
+.nametextbox {
+  
+ 
+  width: 325px;
+  height: 60px;
+  border-radius: 1.875rem;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 400;  
+  background: #ffffff;
+  border: 1px  solid #fdae2c;
+}
+
+.passwordtextbox {
+  
+  
+  width: 325px;
+  height: 60px;
+  border-radius: 1.875rem;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 400; 
+  background: #ffffff;
+  border: 1px  solid #fdae2c;
+}
+
+.alignstuffcenter{
+    margin-top: 100px;
+    margin-left: 180px;
+    margin-right: 165px; 
+    padding-inline: 50px; 
+    flex: content;    
+}
+
+}
+

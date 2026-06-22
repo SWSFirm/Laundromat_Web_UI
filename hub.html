@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="images/nappmenu.png" />
+    <link rel="stylesheet" href="Component/Dashboard.css">
+    <link rel="stylesheet" href="Component/Services.css">
+    <link rel="stylesheet" href="Component/Users.css">
+    <link rel="stylesheet" href="Component/Payments.css">
+    <link rel="stylesheet" href="Component/Financials.css">
+    <link rel="stylesheet" href="/css/hub.css" />
+    <script>
+          document.addEventListener("DOMContentLoaded", () => {
+            const activityArea = document.querySelector(".activity_area");
+
+            document.querySelectorAll(".navigation_area a.btn, .navigation_area a.btnfinancials")
+              .forEach(link => {
+                if (link.getAttribute("href") === "index.html") return;
+
+                link.addEventListener("click", event => {
+                  event.preventDefault();
+                  const url = link.getAttribute("href");
+                  if (!url || url === "#") return;
+
+                  fetch(url)
+                    .then(response => {
+                      if (!response.ok) throw new Error("Failed to load " + url);
+                      return response.text();
+                    })
+                    .then(html => {
+                      const parser = new DOMParser();
+                      const doc = parser.parseFromString(html, "text/html");
+                      activityArea.innerHTML = doc.body.innerHTML;
+                    })
+                    .catch(error => {
+                      console.error(error);
+                      activityArea.innerHTML = "<p>Could not load content.</p>";
+                    });
+                });
+              });
+          });
+    </script>
+    <title>N laundry WEB UI | APP Hub</title>
+  </head>
+  <body> 
+    <main class="apphub">
+      <section class="section">
+                <div class="navigation_area ">
+                  <div class="divnav_Images">
+                      <img class="image_navigation_area" src="images/Laundry_app_logo3.png"/>
+                      
+                      <a class="image_navigation_area_togglebtn">  
+                      <img src="images/nappmenu.png"/>  
+                      </a>                    
+                  </div>                  
+
+                    <div>
+                        <a href="Component/Dashboard.html" class="btn">                          
+                          <img class="image_button_area"  src="images/Dashboard.png"/> <p class="dasboardtext">Dashboard</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="Component/Services.html" class="btn" >                          
+                          <img class="image_button_area"  src="images/services.png"/> <p class="Servicestext">Services</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="Component/Users.html" class="btn" >                          
+                          <img class="image_button_area" src="images/users.png"/> <p class="userstext">Users</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="Component/Payments.html" class="btn" >                          
+                          <img class="image_button_area"  src="images/payments.png"/> <p class="paymentstext">Payments</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="Component/Financials.html" class="btnfinancials" >                          
+                          <img class="image_button_area" src="images/financials.png"/> <p class="financialstext"> Financials</p> 
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="btn" >                          
+                          <img class="image_button_area"  src="images/settings.png"/> <p class="settingstext"> </p>Settings
+                        </a>
+                    </div>
+                    <div>
+                        <a href="index.html" class="btn" >                          
+                          <img class="image_button_area"  src="images/logout.png"/> <p class="settingstext"> </p>Logout
+                        </a>
+                    </div>
+       </div>
+                
+       <div class="activity_area">
+          <img class="image_activity_area" src="images/Laundry_app_logo3.png"/>  
+            <!--Like in blazor for loading component in this  section eg dashboard component-->
+                            
+        </div>
+      </section>
+       
+        
+     
+    </main>    
+  </body>    
+</html>

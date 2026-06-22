@@ -1,0 +1,222 @@
+
+*,
+*::before,*::after{
+    box-sizing: border-box;
+}
+
+main{
+
+    overflow-x: clip;
+}
+
+
+body{
+  
+  font-family: 'roboto light',sans-serif ;
+  font-weight: 500;
+  margin:0;   
+  overflow: hidden;
+}
+.apphub {
+  
+  background: #fff;
+}
+.navigation_area{ 
+  
+  width: 400px;
+  height: 67.5rem;
+  background: #c5dff4;
+
+}
+
+.activity_area{  
+  
+  width: 100rem;
+  height: 67.5rem;
+  background: #34a8ff;
+
+}
+
+section{
+  background: orange;
+  display:flex; 
+  align-items: center;
+}
+
+img{
+
+  margin: 0;
+}
+
+.divnav_Images{
+
+   display: flex;
+}
+
+.image_navigation_area{
+
+  justify-content:start;
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 66px;
+  width: 294px;
+  height: 143px;  
+
+}
+.image_navigation_area_togglebtn{
+
+  padding: 0px;
+  
+  justify-content:start;  
+  margin-top: 55px;
+  margin-left: 0;
+  margin-right: 5px;
+  margin-bottom: 2;
+  width: 96px;
+  height: 96px; 
+  border-radius: 3.125rem 3.125rem 3.125rem 3.125rem ; 
+  
+}
+
+.image_navigation_area_togglebtn:hover{  
+  color: #c5dff4;
+  background: #34a8ff;
+  border: 0.0625rem  solid #ffffff;
+}
+
+
+.btntoggle{
+ 
+  color:white;
+  background: #34a8ff;
+   border-radius: 3.125rem 3.125rem 3.125rem 3.125rem ;
+   width: 96px;
+  height: 96px;  
+}
+
+.btntoggle:hover{
+
+  color: #c5dff4;
+
+}
+
+.dasboardtext{
+
+  margin-left: 29px;
+}
+.Servicestext{
+
+  margin-left: 44px;
+
+}
+.userstext{
+
+  margin-left: 59px;
+}
+
+.paymentstext{
+
+  margin-left: 35px;
+}
+
+
+.financialstext{
+
+  margin-left: 30px;
+}
+
+.settingstext{
+
+  margin-left: 46px;
+}
+
+
+.image_activity_area{  
+
+  margin: 23.3125rem 33.1875rem;
+  width: 31.0625rem;
+  height: 16.5rem;  
+  
+
+}
+
+a {
+  text-decoration: none;
+}
+
+.a_margin{
+
+  margin-bottom: 27rem;
+}
+
+.btnfinancials{ 
+
+  margin-bottom: 2px;
+  font-size: 1.6875rem;
+  font-weight: 600;
+  color: #fff;
+  height: 90px;
+  align-items: center;
+  display:flex;  
+  border-radius: 0 3.125rem 3.125rem 0;
+  background: #34a8ff;
+  border: 0.0625rem  solid #ffffff;
+  
+}
+
+.btnfinancials:Hover{
+
+  color: black;
+  background: #c5dff4;
+
+}
+
+
+.btn{ 
+
+  margin-bottom: 0.25rem;
+  font-size: 1.6875rem;
+  font-weight: 600;
+  color: #fff;
+  height: 90px;
+  align-items: center;
+  display:flex;  
+  border-radius: 0 3.125rem 3.125rem 0;
+  background: #34a8ff;
+  border: 0.0625rem  solid #ffffff;
+  
+}
+
+.btn:Hover{
+
+  color: black;
+  background: #c5dff4;
+
+}
+
+.margin_centring{
+
+  margin-top: 1px;
+  margin-right: 15px;
+  margin-left:1px;
+  margin-bottom: 1px;
+}
+
+.image_button_area{ 
+
+  margin-left: 9px;
+  width: 90px;
+  height: 90px;
+
+}
+
+
+.margintxt{
+
+  margin-bottom:1.5625rem ;
+  
+
+}
+

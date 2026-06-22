@@ -1,0 +1,119 @@
+body {
+  
+  font-family: 'roboto light',sans-serif ;
+  font-weight: 500;
+  margin:0;   
+  overflow: hidden;
+}
+
+.services_section {
+  
+  width: 1499px;
+  height: 1080px;
+  background: #34a8ff;
+}
+
+.services_text {
+  margin-top: 50px;
+  margin-left: 15px;
+  height: 40.5px;  
+  font-style: normal;  
+  font-size: 27px;
+  font-weight: bold; 
+  white-space: nowrap;
+  text-align: center;
+  color: #ffffff;
+}
+
+.image_Services {
+    margin-top: 5px;
+    margin-right: 5px;
+    height: 96px;
+    width:  96px;
+
+}
+
+.flex {
+    display: flex;
+    margin-bottom: 0;
+}
+
+.services_table {
+  margin-left: 15px;
+  width: 982px;
+  height: 890px;
+  border-radius: 15px;
+  background: #c5dff4;
+}
+
+.add_services_form {
+  margin-left: 15px;
+  width: 448px;
+  height: 890px;
+  border-radius: 15px;
+  background: #c5dff4;
+}
+
+.add-service-textbox_label {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 20px;
+  width: 96px;
+  height: 36px;  
+  font-size: 24px;
+  line-height: 36px;
+  white-space: nowrap;
+  text-align: center;
+  color: #030303;
+}
+
+.add-service-textbox_label_Price {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 7px;
+  width: 96px;
+  height: 36px;  
+  font-size: 24px;
+  line-height: 36px;
+  white-space: nowrap;
+  text-align: center;
+  color: #030303;
+}
+
+.add-service_textbox { 
+     text-align: center;
+  font-size: 25px; 
+  width: 372px;
+  height: 60px;
+  border-radius: 30px;
+  background: #ffffff;
+  border: 1px  solid #fdae2c;
+}
+.add-service_button {
+ 
+ 
+  margin-top: 53px;
+  margin-left: 35px;
+  color:white;
+  font-size: 24px;
+  width: 372px;
+  height: 60px;
+  border-radius: 30px;
+  background: #fdae2c;
+  border: 1px  solid #fdae2c;
+}
+
+.add-service_button:hover{
+
+     background-color: #ffffff;
+  color: #fdae2c;
+
+}
+.margin_to_the_left{
+    margin-top: 15px;
+    margin-left: 35px;
+}
+.spacing{
+    height: 26px;
+
+}

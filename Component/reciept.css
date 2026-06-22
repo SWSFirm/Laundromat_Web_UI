@@ -1,0 +1,68 @@
+body {
+  
+  font-family: 'roboto light',sans-serif ;
+  font-weight: 500;
+  margin:0;   
+  overflow: hidden;
+}
+.n-laundry-payments_recipt {
+  
+  width: 676px;
+  height: 890px;
+  overflow: hidden;
+  border-radius: 15px;
+  background: #c5dff4;
+}
+.reciept-of_payment {  
+  
+  height: 40.5px;  
+  font-size: 27px; 
+  font-weight: bold; 
+  white-space: nowrap;
+  text-align: center;
+  color: #ffffff;
+}
+
+.reciept-text_info {
+  Margin:0px;   
+  font-weight: bold;
+  font-size: 24px;  
+  text-align: center;
+  color: #040404;
+}
+
+.flex {
+    display: flex;
+    margin-bottom: 0;
+}
+.center{
+    Margin:30px;
+    justify-content: center;
+text-align: center;
+
+}
+
+.spacing_left{
+   
+    margin-left: 20px;
+
+}
+
+
+.complete-payment_button {  
+  color:#fff;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 27px;
+  width: 372px;
+  height: 60px;
+  border-radius: 30px;
+  background: #fdae2c;
+  border: 1px  solid #fdae2c;
+}
+.complete-payment_button:hover{
+background-color: #ffffff;
+  color: #fdae2c;
+}
+ 
+
