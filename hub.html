@@ -7,13 +7,37 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/nappmenu.png" />
     <link rel="stylesheet" href="Component/Dashboard.css">
     <link rel="stylesheet" href="Component/Services.css">
-    <link rel="stylesheet" href="Component/Users.css">
+    <!-- Removed reference to Component/Users.css (not present) -->
     <link rel="stylesheet" href="Component/Payments.css">
-    <link rel="stylesheet" href="Component/Financials.css">
+    <!-- Fixed filename to match repository: financials.css is lowercase in the repo -->
+    <link rel="stylesheet" href="Component/financials.css">
     <link rel="stylesheet" href="css/hub.css" />
     <script>
           document.addEventListener("DOMContentLoaded", () => {
             const activityArea = document.querySelector(".activity_area");
+
+            function makeAbsoluteUrls(doc, fetchedUrl) {
+              const baseUrl = new URL(fetchedUrl, window.location.href);
+
+              // Convert relative src attributes to absolute URLs based on the fetched file's URL
+              doc.querySelectorAll('[src]').forEach(el => {
+                const src = el.getAttribute('src');
+                if (src && !/^(?:[a-z]+:)?\/\//i.test(src) && !src.startsWith('data:')) {
+                  el.setAttribute('src', new URL(src, baseUrl).href);
+                }
+              });
+
+              // Convert relative hrefs on link elements (e.g., stylesheets)
+              doc.querySelectorAll('link[href]').forEach(el => {
+                const href = el.getAttribute('href');
+                if (href && !/^(?:[a-z]+:)?\/\//i.test(href)) {
+                  el.setAttribute('href', new URL(href, baseUrl).href);
+                }
+              });
+
+              // Convert relative href/src on other elements (e.g., <a href="...">) if desired
+              // (not strictly necessary for navigation anchors since we fetch them directly)
+            }
 
             document.querySelectorAll(".navigation_area a.btn, .navigation_area a.btnfinancials")
               .forEach(link => {
@@ -32,6 +56,10 @@
                     .then(html => {
                       const parser = new DOMParser();
                       const doc = parser.parseFromString(html, "text/html");
+
+                      // Rewrite relative URLs inside the fetched fragment so images/styles resolve correctly
+                      makeAbsoluteUrls(doc, url);
+
                       activityArea.innerHTML = doc.body.innerHTML;
                     })
                     .catch(error => {
@@ -97,8 +125,8 @@
           <img class="image_activity_area" src="images/Laundry_app_logo3.png"/>  
             <!--Like in blazor for loading component in this  section eg dashboard component-->
                             
-        </div>
-      </section>
+         </div>
+       </section>
        
         
      
